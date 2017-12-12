@@ -1,32 +1,35 @@
 {
-    "name": "crunchboard",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "description": "crunch's dashboard",
-    "icons": {
-        "16": "images/icon-16.png",
-        "128": "images/icon-128.png"
+  "name": "crunchboard",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "crunch's dashboard",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
     },
-    "background": {
-        "scripts": [
-            "scripts/background.js"
-        ]
-    },
-    "browser_action": {
-        "default_icon": {
-            "19": "images/icon-19.png",
-            "38": "images/icon-38.png"
-        },
-        "default_title": "data collector"
-    },
-    "options_page": "options.html",
-    "permissions": [
-        "<all_urls>",
-        "webRequest",
-        "tabs",
-        "unlimitedStorage",
-        "storage",
-        "http://localhost/*"
-    ],
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+    "default_title": "data collector"
+  },
+  "chrome_url_overrides": {
+    "newtab": "new_tab.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "tabs",
+    "unlimitedStorage",
+    "storage",
+    "http://localhost/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
 }

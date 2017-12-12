@@ -1,0 +1,9 @@
+{
+  "name": "crunchboard",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "bitfinex-api-node": "^1.2.1"
+  },
+  "author": "Ingvaras Merkys"
+}
