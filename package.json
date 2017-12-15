@@ -54,6 +54,7 @@
     "path": "^0.12.7",
     "require-dir": "0.x.x",
     "vinyl-named": "1.x.x",
+    "webpack": "^3.10.0",
     "webpack-stream": "^4.0.0",
     "yargs": "5.x.x"
   }
