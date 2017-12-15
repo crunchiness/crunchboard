@@ -20,9 +20,9 @@
     "default_title": "data collector"
   },
   "chrome_url_overrides": {
-    "newtab": "new_tab.html"
+    "newtab": "pages/new_tab.html"
   },
-  "options_page": "options.html",
+  "options_page": "pages/options.html",
   "permissions": [
     "<all_urls>",
     "webRequest",

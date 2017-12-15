@@ -1,3 +1,2 @@
-'use strict';
-
-console.log('\'Allo \'Allo! Option');
+let text = 'This is options page';
+console.log(text);
